@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp2.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Window2" Height="508.5" Width="912.5">
+    <Grid Loaded="Grid_Loaded">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition Width="75*"/>
+        </Grid.ColumnDefinitions>
+        
+        <ComboBox x:Name="combo_1" HorizontalAlignment="Left" Margin="392,62,0,0" VerticalAlignment="Top" Width="194" RenderTransformOrigin="0.317,-1.295" Height="42">
+
+            <ComboBoxItem x:Name="Adventure" Content="Adventure" HorizontalAlignment="Left" Width="192" FontWeight="Bold" Selected="Adventure_Selected"/>
+            <ComboBoxItem x:Name="Classics" Content="Classics" HorizontalAlignment="Left" Width="192" FontWeight="Bold" Selected="Classics_Selected"/>
+            <ComboBoxItem x:Name="Science_Fiction" Content="Science Fiction" HorizontalAlignment="Left" Width="192" FontWeight="Bold" Selected="Science_Fiction_Selected"/>
+
+        </ComboBox>
+
+        <ComboBox x:Name="combo_2" HorizontalAlignment="Left" Margin="392,199,0,0" VerticalAlignment="Top" Width="194" RenderTransformOrigin="0.317,-1.295" Height="42"/>
+        <Button x:Name="book" Content="Add Book to List.." HorizontalAlignment="Left" Margin="79,279,0,0" VerticalAlignment="Top" Width="194" Height="39" FontWeight="Bold" FontSize="16" Click="book_Click"/>
+        <CheckBox x:Name="Confirm" Content="Confirm" HorizontalAlignment="Left" Margin="106,385,0,0" VerticalAlignment="Top" Height="25" Width="70" Checked="Confirm_Checked" Unchecked="Confirm_Unchecked"/>
+        <Label Content="Select a Category" HorizontalAlignment="Left" Margin="79,62,0,0" VerticalAlignment="Top" Width="194" Height="42" FontWeight="Bold"/>
+        <Label Content="Select a Book" HorizontalAlignment="Left" Margin="79,199,0,0" VerticalAlignment="Top" Width="194" Height="42" FontWeight="Bold"/>
+        <Button x:Name="next" Content="Next" HorizontalAlignment="Left" Margin="392,385,0,0" VerticalAlignment="Top" Width="194" Height="39" FontSize="16" FontWeight="Bold" Click="next_Click"/>
+        
+    </Grid>
+    
+</Window>
